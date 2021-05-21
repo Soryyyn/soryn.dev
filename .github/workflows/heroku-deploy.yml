@@ -21,7 +21,7 @@ jobs:
                     yarn install --frozen-lockfile
                     yarn run build
             -   name: Copy static file to build folder
-                run: cp /static.json /build/
+                run: cp ./static.json ./build/
             -   name: Deploy build folder to Heroku
                 uses: behe/heroku-build@v1
                 with:
