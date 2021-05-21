@@ -7,7 +7,7 @@ on:
         branches: [ master ]
 
 jobs:
-    build:
+    node-setup:
         runs-on: ubuntu-latest
         steps:
             -   name: Checkout repository
@@ -16,9 +16,12 @@ jobs:
                 uses: actions/setup-node@v2
                 with:
                     node-version: 15
-            -   name: Install dependencies and build app
-                run: |
-                    yarn install --frozen-lockfile
-                    yarn run build
-            -   name: Test fs on action
-                run: ls
+    dependency-installation:
+        runs-on: ubuntu-latest
+        steps:
+        -   name: Install dependencies and build app
+            run: |
+                yarn install --frozen-lockfile
+                yarn run build
+        -   name: Test fs on action
+            run: ls
