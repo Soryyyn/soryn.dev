@@ -17,5 +17,8 @@ jobs:
                 with:
                     node-version: 15
             -   name: Install dependencies and build app
-                run: yarn install --frozen-lockfile
-                run: yarn run build
+                run: |
+                    yarn install --frozen-lockfile
+                    yarn run build
+            -   name: Test fs on action
+                run: ls
