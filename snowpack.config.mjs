@@ -1,11 +1,11 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
-module.exports = {
+export default {
   mount: {
     public: { url: '/', static: true },
     src: { url: '/dist' },
   },
   plugins: [
-    '@prefresh/snowpack',
+    '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     [
       '@snowpack/plugin-typescript',

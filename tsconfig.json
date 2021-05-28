@@ -1,11 +1,13 @@
 {
-  "include": ["src", "types"],
+  "include": [
+    "src",
+    "types"
+  ],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
-    "jsxFactory": "h",
     "baseUrl": "./",
     /* paths - import rewriting/resolving */
     "paths": {
@@ -19,9 +21,13 @@
     /* Additional Options */
     "strict": true,
     "skipLibCheck": true,
+    "types": [
+      "mocha",
+      "snowpack-env"
+    ],
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error"
+    // "importsNotUsedAsValues": "preserve"
   }
 }
