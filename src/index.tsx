@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./App";
-import Home from "@sites/home";
-import './index.css';
+import App from "./app_new";
+import './styles/global.scss';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Home />
+        <App />
     </React.StrictMode>,
     document.getElementById('root'),
 );

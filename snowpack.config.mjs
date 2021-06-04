@@ -14,6 +14,7 @@ export default {
                 ...(process.versions.pnp ? { tsc: 'yarn pnpify tsc' } : {}),
             },
         ],
+        '@snowpack/plugin-sass',
     ],
     routes: [
         /* Enable an SPA Fallback in development: */
@@ -34,7 +35,6 @@ export default {
         /* ... */
     },
     alias: {
-        "@sites": "./src/sites",
-        "@components": "./src/components"
+
     }
 };
