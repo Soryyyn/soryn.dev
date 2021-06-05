@@ -5,7 +5,7 @@ import "../styles/home.scss";
 function Home() {
 
     return (
-        <div id="gridContainer">
+        <div id="container">
             <Typewriter
                 string="soryn.dev"
                 delay={150}
