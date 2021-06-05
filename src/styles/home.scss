@@ -1,10 +1,13 @@
-#container {
+#titleContainer {
     border: blue solid 2px;
     height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .typewriter {
-    // height: 100%;
     font-family: var(--main-font);
     font-size: 7rem;
     font-weight: bold;
