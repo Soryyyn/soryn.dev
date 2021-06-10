@@ -2,10 +2,9 @@ nav ul {
     border: red solid 2px;
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
     margin: 0;
-
     list-style-type: none;
 
     a {
@@ -13,6 +12,7 @@ nav ul {
 
         li {
             background: var(--light-secondary);
+            backdrop-filter: blur(5px);
             padding: 1rem 3rem;
             margin: 0 2rem;
             min-width: 80px;

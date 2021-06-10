@@ -4,7 +4,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import Navigation from "./navigation";
+import Navigation from "./components/navigation";
 
 // sites
 import Home from "./sites/home";
