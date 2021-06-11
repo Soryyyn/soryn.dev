@@ -10,9 +10,7 @@ function Home() {
                 string="soryn.dev"
                 delay={150}
                 stopBlinkinOnComplete={false}
-                onComplete={() => {
-                    console.log("finished writing title")
-                }}
+                onComplete={() => { }}
                 className="typewriter"
             />
         </div>

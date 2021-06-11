@@ -6,7 +6,6 @@ import { Canvas, Vector3 } from "@react-three/fiber";
 import Cube from "./cube";
 
 export default function Background() {
-
     let amountOfCubes: number = 4;
     const cubes: any = [];
 
@@ -20,14 +19,9 @@ export default function Background() {
         ];
         const initVerticalSpeed: number = (Math.random() * 0.01) + 0.025;
         const randRotation = [
-            // Math.ceil(Math.random() * 0.02) * (Math.round(Math.random()) ? 0 : -0),
-            // Math.ceil(Math.random() * 0.02) * (Math.round(Math.random()) ? 0 : -0)
             Math.random() * 0.02,
             Math.random() * 0.02
         ];
-
-        console.log(randRotation);
-
 
         cubes.push(
             <Cube
