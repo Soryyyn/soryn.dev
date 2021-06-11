@@ -27,6 +27,7 @@ export default function Cube({ color, scale, position, verticalSpeed, xRotation,
         if (cube.current.position.y >= 8) {
             cube.current.position.y = -8;
             cube.current.position.x = Math.ceil(Math.random() * 8) * (Math.round(Math.random()) ? 1 : -1);
+            cube.current.position.z = Math.ceil(Math.random() * 2) * (Math.round(Math.random()) ? 1 : -1);
         }
     });
 

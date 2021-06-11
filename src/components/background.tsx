@@ -12,13 +12,22 @@ export default function Background() {
 
     // add cubes with random initial values
     for (let i = 0; i < amountOfCubes; i++) {
-        let initScale: number = Math.floor(Math.random() * 2) + 2;
-        let initPos: Vector3 = [
+        const initScale: number = Math.floor(Math.random() * 2) + 1.5;
+        const initPos: Vector3 = [
             Math.ceil(Math.random() * 8) * (Math.round(Math.random()) ? 1 : -1),
             Math.ceil(Math.random() * 5) * (Math.round(Math.random()) ? 1 : -1),
-            0
+            Math.ceil(Math.random() * 2) * (Math.round(Math.random()) ? 1 : -1),
         ];
-        let initVerticalSpeed: number = (Math.random() * 0.025) + 0.025;
+        const initVerticalSpeed: number = (Math.random() * 0.01) + 0.025;
+        const randRotation = [
+            // Math.ceil(Math.random() * 0.02) * (Math.round(Math.random()) ? 0 : -0),
+            // Math.ceil(Math.random() * 0.02) * (Math.round(Math.random()) ? 0 : -0)
+            Math.random() * 0.02,
+            Math.random() * 0.02
+        ];
+
+        console.log(randRotation);
+
 
         cubes.push(
             <Cube
@@ -27,8 +36,8 @@ export default function Background() {
                 scale={initScale}
                 position={initPos}
                 verticalSpeed={initVerticalSpeed}
-                xRotation={0.01}
-                yRotation={0.01}
+                xRotation={randRotation[0]}
+                yRotation={randRotation[1]}
             />
         );
     }
