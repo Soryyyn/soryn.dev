@@ -16,7 +16,7 @@ export default function Cube({ color, scale, position, verticalSpeed, xRotation,
     const cube = useRef<THREE.Mesh>(null!);
 
     // alter the cube every frame
-    useFrame((state: any, delta: any) => {
+    useFrame(() => {
         cube.current.rotation.x += xRotation;
         cube.current.rotation.y += yRotation;
 
