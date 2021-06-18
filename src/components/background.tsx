@@ -26,7 +26,7 @@ export default function Background() {
         cubes.push(
             <Cube
                 key={i}
-                color="black"
+                color="blue"
                 scale={initScale}
                 position={initPos}
                 verticalSpeed={initVerticalSpeed}
@@ -38,6 +38,7 @@ export default function Background() {
 
     return (
         <Canvas>
+            <ambientLight />
             <pointLight
                 color="white"
                 position={[5, 5, 5]}

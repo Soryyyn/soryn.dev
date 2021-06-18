@@ -1,8 +1,14 @@
 import React from "react";
 import { Typewriter } from "react-typewriting-effect";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+// components
+import SocialButton from "../components/social_button";
+
+// styles
 import "../styles/home.scss";
 
-function Home() {
+export default function Home() {
 
     return (
         <div id="titleContainer">
@@ -14,8 +20,7 @@ function Home() {
                 className="typewriter"
             />
         </div>
+        // <SocialButton/>
     );
 
 }
-
-export default Home;

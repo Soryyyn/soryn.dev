@@ -2,15 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
 
 :root {
-    --light-primary: #ffffff;
-    --light-secondary: #e9e7e7;
+    --light-primary: rgba(255, 255, 255, 1);
+    --light-secondary: rgba(233, 231, 231, 1);
+    --main-dark: rgba(39, 36, 48, 1);
+    --dark-bg: rgba(39, 36, 48, 0.6);
+    --dark-bg-selected: rgba(39, 36, 48, 0.8);
+    --dark-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     --main-font: "Fire Mono", monospace;
 }
 
 body {
   margin: 0;
   padding: 1rem;
-  border: 2px green solid;
+//   border: 2px green solid;
   height: 100vh;
   box-sizing: border-box;
 
@@ -22,7 +26,7 @@ body {
 }
 
 #root {
-    border: solid 2px purple;
+    // border: solid 2px purple;
     height: 100%;
     box-sizing: border-box;
     display: flex;
