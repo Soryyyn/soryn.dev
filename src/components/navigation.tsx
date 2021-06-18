@@ -1,20 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/navigation.scss";
 
+// styles
+import styles from "../styles/navigation.module.scss";
 
 export default function Navigation() {
 
     return (
         <nav>
             <ul>
-                <NavLink exact to="/aboutme" activeClassName="activeNavLink">
+                <NavLink exact to="/aboutme" activeClassName={styles.activeNavLink}>
                     <li>about me</li>
                 </NavLink>
-                <NavLink exact to="/" activeClassName="activeNavLink">
+                <NavLink exact to="/" activeClassName={styles.activeNavLink}>
                     <li>home</li>
                 </NavLink>
-                <NavLink exact to="/m152" activeClassName="activeNavLink">
+                <NavLink exact to="/m152" activeClassName={styles.activeNavLink}>
                     <li>m152</li>
                 </NavLink>
             </ul>

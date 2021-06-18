@@ -4,7 +4,9 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import "./styles/app.scss";
+
+// styles
+import styles from "./styles/app.module.scss";
 
 // components
 import Navigation from "./components/navigation";
@@ -18,7 +20,7 @@ export default function App() {
     return (
         /* react router manages routing and navigation */
         <Router>
-            <div id="backgroundContainer">
+            <div className={styles.backgroundContainer}>
                 <Background />
             </div>
             <Navigation />
