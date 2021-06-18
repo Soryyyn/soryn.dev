@@ -12,7 +12,7 @@ export default function Cube({ color, scale, position, verticalSpeed, xRotation,
     yRotation: number
 }) {
 
-    // reference to mesh elemen
+    // reference to mesh element
     const cube = useRef<THREE.Mesh>(null!);
 
     // alter the cube every frame
