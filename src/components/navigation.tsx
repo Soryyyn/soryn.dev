@@ -12,7 +12,7 @@ export default function Navigation() {
                 <NavLink exact to="/aboutme" activeClassName={styles.activeNavLink}>
                     <li>about me</li>
                 </NavLink>
-                <NavLink exact to="/" activeClassName={styles.activeNavLink}>
+                <NavLink exact to="/home" activeClassName={styles.activeNavLink}>
                     <li>home</li>
                 </NavLink>
                 <NavLink exact to="/m152" activeClassName={styles.activeNavLink}>
