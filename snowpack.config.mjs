@@ -20,6 +20,7 @@ export default {
             },
         ],
         '@snowpack/plugin-sass',
+        '@snowpack/plugin-webpack',
     ],
     routes: [
         /* Enable an SPA Fallback in development: */
@@ -31,7 +32,7 @@ export default {
     ],
     optimize: {
         /* Example: Bundle your final build: */
-        // "bundle": true,
+        "bundle": true,
     },
     packageOptions: {
         // source: 'remote',
