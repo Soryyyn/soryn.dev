@@ -20,7 +20,7 @@ export default {
             },
         ],
         '@snowpack/plugin-sass',
-        '@snowpack/plugin-webpack',
+        // '@snowpack/plugin-webpack',
     ],
     routes: [
         /* Enable an SPA Fallback in development: */
