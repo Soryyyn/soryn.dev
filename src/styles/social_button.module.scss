@@ -29,7 +29,7 @@
 
 @for $i from 1 through 3 {
     .socialButton:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.5}s;
+        animation-delay: #{$i * 0.35}s;
     }
 }
 
