@@ -2,6 +2,8 @@ import React from "react";
 
 export default function Custom404() {
 
+    document.title = "404 | soryn.dev"
+
     return (
         <div>
             <h1>404</h1>

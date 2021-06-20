@@ -10,6 +10,7 @@ import SocialButton from "../components/social_button";
 import styles from "../styles/home.module.scss";
 
 export default function Home() {
+    document.title = "home | soryn.dev"
 
     const [titleStatus, setTitleStatus] = useState(false);
 

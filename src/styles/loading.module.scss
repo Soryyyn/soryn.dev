@@ -1,0 +1,28 @@
+.loadingStyles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+
+    p {
+        font-family: var(--main-font);
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--light-primary);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .loadingStyles{
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
