@@ -6,16 +6,18 @@ import { Canvas, Vector3 } from "@react-three/fiber";
 import Cube from "./cube";
 
 export default function Background() {
+    const camera = new THREE.OrthographicCamera(innerWidth / -2, innerWidth / 2, innerHeight / 2, innerHeight / -2, 1, 100);
+
     let amountOfCubes: number = 4;
     const cubes: any = [];
 
     // add cubes with random initial values
     for (let i = 0; i < amountOfCubes; i++) {
-        const initScale: number = Math.floor(Math.random() * 2) + 1.5;
+        const initScale: number = Math.floor(Math.random() * 3);
         const initPos: Vector3 = [
-            Math.ceil(Math.random() * 8) * (Math.round(Math.random()) ? 1 : -1),
-            Math.ceil(Math.random() * 5) * (Math.round(Math.random()) ? 1 : -1),
-            Math.ceil(Math.random() * 2) * (Math.round(Math.random()) ? 1 : -1),
+            (Math.floor(Math.random() * window.innerWidth) / 150) * (Math.round(Math.random()) ? 1 : -1),
+            (Math.floor(Math.random() * window.innerHeight) / 150) * (Math.round(Math.random()) ? 1 : -1),
+            0
         ];
         const initVerticalSpeed: number = (Math.random() * 0.01) + 0.025;
         const randRotation = [
@@ -38,15 +40,19 @@ export default function Background() {
 
     return (
         <Canvas>
-            <ambientLight />
-            <pointLight
-                color="white"
-                position={[5, 5, 5]}
-                intensity={10}
-                decay={5}
-                distance={0}
-            />
-            {cubes}
+            {/* <OrthographicCamera makeDefault zoom={50} position={[0, 0, 100]} left={1000}> */}
+            <camera>
+                <ambientLight />
+                <pointLight
+                    color="white"
+                    position={[5, 5, 5]}
+                    intensity={10}
+                    decay={5}
+                    distance={0}
+                />
+                {cubes}
+            </camera>
+            {/* </OrthographicCamera> */}
         </Canvas>
     );
 

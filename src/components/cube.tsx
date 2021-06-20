@@ -24,10 +24,9 @@ export default function Cube({ color, scale, position, verticalSpeed, xRotation,
 
         // if the cube goes offscreen
         // then move it back down with a random x position
-        if (cube.current.position.y >= 8) {
-            cube.current.position.y = -8;
-            cube.current.position.x = Math.ceil(Math.random() * 8) * (Math.round(Math.random()) ? 1 : -1);
-            cube.current.position.z = Math.ceil(Math.random() * 2) * (Math.round(Math.random()) ? 1 : -1);
+        if (cube.current.position.y >= 5) {
+            cube.current.position.y = -5;
+            cube.current.position.x = (Math.floor(Math.random() * window.innerWidth) / 150) * (Math.round(Math.random()) ? 1 : -1);
         }
     });
 
