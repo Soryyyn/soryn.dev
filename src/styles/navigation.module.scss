@@ -12,15 +12,18 @@ nav ul {
 
     a {
         text-decoration: none;
+        cursor: default;
 
         li {
+            cursor: pointer;
+
             background: var(--dark-bg);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             padding: 1rem 3rem;
             margin: 0 2rem;
             min-width: 90px;
-            border-radius: 10px;
+            border-radius: var(--default-border-radius);
 
             font-family: var(--main-font);
             font-weight: bold;

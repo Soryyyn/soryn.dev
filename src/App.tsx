@@ -15,6 +15,7 @@ import styles from "./styles/app.module.scss";
 // components
 import Navigation from "./components/navigation";
 import Loading from "./components/loading";
+
 // lazy load bg
 const Background = React.lazy(() => import("./components/background"));
 

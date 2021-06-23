@@ -1,0 +1,61 @@
+.profile-container {
+    // border: white solid 2px;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--main-dark);
+
+    #profile-img {
+        width: 18%;
+        border-radius: var(--default-border-radius);
+        box-shadow: var(--dark-shadow);
+
+        transition: 0.8s;
+
+        margin-bottom: -0.3rem;
+
+        &:hover {
+            animation: hueRotate infinite 1s linear;
+        }
+    }
+
+    h1, p {
+        font-family: var(--main-font);
+        text-align: center;
+
+        a {
+            color: var(--main-dark);
+
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        margin-bottom: -0.3rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+@keyframes hueRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

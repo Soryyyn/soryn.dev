@@ -3,11 +3,15 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    min-width: 25px;
+    min-height: 25px;
 
     margin: 0 1rem;
     padding: 1rem;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: var(--default-border-radius);
     box-shadow: var(--dark-shadow);
     color: var(--light-primary);
     backdrop-filter: blur(10px);

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import type { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 // styles
-import styles from "../styles/social_button.module.scss";
+import styles from "../styles/socialButton.module.scss";
 
 export default function SocialButton({ faIconElement, link }: {
     faIconElement: IconDefinition,

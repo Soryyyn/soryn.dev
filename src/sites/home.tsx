@@ -4,7 +4,7 @@ import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 // components
-import SocialButton from "../components/social_button";
+import SocialButton from "../components/socialButton";
 
 // styles
 import styles from "../styles/home.module.scss";
