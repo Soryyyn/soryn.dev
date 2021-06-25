@@ -40,7 +40,6 @@ export default function Background() {
 
     return (
         <Canvas>
-            {/* <OrthographicCamera makeDefault zoom={50} position={[0, 0, 100]} left={1000}> */}
             <camera>
                 <ambientLight />
                 <pointLight
@@ -52,7 +51,6 @@ export default function Background() {
                 />
                 {cubes}
             </camera>
-            {/* </OrthographicCamera> */}
         </Canvas>
     );
 

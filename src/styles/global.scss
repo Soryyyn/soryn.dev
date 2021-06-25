@@ -5,8 +5,10 @@
     --light-primary: rgba(255, 255, 255, 1);
     --light-secondary: rgba(233, 231, 231, 1);
     --main-dark: rgba(39, 36, 48, 1);
+    --main-dark-hovered: rgb(80, 74, 99);
     --dark-bg: rgba(39, 36, 48, 0.6);
     --dark-bg-selected: rgba(39, 36, 48, 0.8);
+    --dark-bg-lo: rgba(39, 36, 48, 0.15);
     --dark-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     --main-font: "Fire Mono", monospace;
     --default-border-radius: 10px;
@@ -34,4 +36,27 @@ body {
     display: flex;
     align-items: stretch;
     flex-direction: column;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-dark);
+    border-radius: var(--default-border-radius);
+    transition: 0.1s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-dark-hovered);
+    transition: 0.1s;
 }
