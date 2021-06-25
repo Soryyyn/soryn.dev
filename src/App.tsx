@@ -5,6 +5,7 @@ import {
     Route,
     Redirect
 } from "react-router-dom";
+import 'tippy.js/dist/tippy.css';
 
 // utils
 import { lazyPreloadRoute } from "./util/preload"

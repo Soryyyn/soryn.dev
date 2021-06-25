@@ -26,9 +26,9 @@ export default function Home() {
                 />
             </div>
             <div className={styles.socials}>
-                <SocialButton faIconElement={faGithub} link="https://github.com/Soryyyn" />
-                <SocialButton faIconElement={faTwitter} link="https://twitter.com/dev_soryn" />
-                <SocialButton faIconElement={faEnvelope} link="mailto:soryn.baechli@gmail.com" />
+                <SocialButton faIconElement={faGithub} tooltip="My Github profile!" link="https://github.com/Soryyyn" />
+                <SocialButton faIconElement={faTwitter} tooltip="My Twitter profile!" link="https://twitter.com/dev_soryn" />
+                <SocialButton faIconElement={faEnvelope} tooltip="My Mail!" link="mailto:soryn.baechli@gmail.com" />
             </div>
         </>
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Typewriter } from "react-typewriting-effect";
+import Tippy from '@tippyjs/react';
 
 // imgs
 import profileImg from "../../public/assets/profile.jpg";
@@ -14,7 +15,9 @@ export default function AboutMe() {
 
     return (
         <div className={styles["profile-container"]}>
-            <img id={styles["profile-img"]} src={profileImg} />
+            <Tippy content="this is me but pixelsorted!">
+                <img id={styles["profile-img"]} src={profileImg} />
+            </Tippy>
             <Typewriter
                 string="Hi! My name is Soryn"
                 delay={150}
