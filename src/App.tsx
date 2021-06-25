@@ -20,12 +20,14 @@ import Loading from "./components/loading";
 const Background = React.lazy(() => import("./components/background"));
 
 // preload all sites
-const promHome = import("./sites/home");
-const promAboutMe = import("./sites/aboutme");
-const prom404 = import("./sites/404");
-const Home = lazyPreloadRoute(promHome);
-const AboutMe = lazyPreloadRoute(promAboutMe);
-const Custom404 = lazyPreloadRoute(prom404);
+const preHomeSite = import("./sites/home");
+const preAboutMeSite = import("./sites/aboutme");
+const pre404Site = import("./sites/404");
+const preM152 = import("./sites/m152");
+const Home = lazyPreloadRoute(preHomeSite);
+const AboutMe = lazyPreloadRoute(preAboutMeSite);
+const Custom404 = lazyPreloadRoute(pre404Site);
+const M152 = lazyPreloadRoute(preM152);
 
 export default function App() {
     // rendered html elements
@@ -49,6 +51,9 @@ export default function App() {
                     </Route>
                     <Route path="/aboutme">
                         <AboutMe />
+                    </Route>
+                    <Route path="/m152">
+                        <M152 />
                     </Route>
 
                     {/* 404 route */}

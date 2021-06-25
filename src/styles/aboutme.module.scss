@@ -13,7 +13,7 @@
     color: var(--main-dark);
 
     #profile-img {
-        width: 18%;
+        width: 20rem;
         border-radius: var(--default-border-radius);
         box-shadow: var(--dark-shadow);
 
@@ -26,9 +26,10 @@
         }
     }
 
-    h1, p {
+    p {
         font-family: var(--main-font);
         text-align: center;
+        font-size: 1.25rem;
 
         a {
             color: var(--main-dark);
@@ -37,14 +38,39 @@
             text-decoration: underline;
         }
     }
+}
 
-    h1 {
-        font-size: 2.25rem;
-        margin-bottom: -0.3rem;
+.typewriter {
+    font-family: var(--main-font);
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #272430;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.typewriterCursor {
+    animation: cursorBlink 1s infinite;
+}
+
+@keyframes cursorBlink {
+    0% {
+        opacity: 1
     }
-
-    p {
-        font-size: 1.25rem;
+    49% {
+        opactiy: 1
+    }
+    50% {
+        opactiy: 0
+    }
+    65% {
+        opacity: 0
+    }
+    85% {
+        opacity: 1
+    }
+    100% {
+        opacity: 1
     }
 }
 
@@ -58,4 +84,21 @@
     100% {
         filter: hue-rotate(360deg);
     }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .profile-container {
+        #profile-img {
+            width: 50%;
+        }
+
+        .typewriter {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
 }
