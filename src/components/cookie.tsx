@@ -2,11 +2,10 @@ import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
 
-
 // styles
 import styles from "../styles/cookie.module.scss";
 
-export default function CookieNotifier(onChange: any) {
+export default function CookieNotifier() {
     const [status, setStatus] = useState<Boolean>()
     const [shown, setShown] = useState<Boolean>(true)
 
