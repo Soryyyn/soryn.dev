@@ -6,12 +6,10 @@ import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
 import styles from "../styles/cookie.module.scss";
 
 export default function CookieNotifier() {
-    const [status, setStatus] = useState<Boolean>()
     const [shown, setShown] = useState<Boolean>(true)
 
     // if the status of cookies changes create it and display the notification
     function handleChange(st: Boolean) {
-        setStatus(st);
         setShown(false);
         if (st) {
             document.cookie = "testCookie=exampleTextInCookie";
