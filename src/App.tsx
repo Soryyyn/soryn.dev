@@ -31,16 +31,6 @@ const Custom404 = lazyPreloadRoute(pre404Site);
 const M152 = lazyPreloadRoute(preM152);
 
 export default function App() {
-
-    const [cookie, setCookie] = useState(false);
-
-    // create cookie
-    // if (document.cookie == undefined || cookie === false) {
-    //     document.cookie = "testCookie=created";
-    //     setCookie(true);
-    // }
-
-
     // rendered html elements
     return (
         /* react router manages routing and navigation */
@@ -52,10 +42,7 @@ export default function App() {
 
                 <Navigation />
 
-                {
-                    document.cookie == undefined || !cookie &&
-                    <CookieNotifier onChange={(value: any) => console.log(value)} />
-                }
+                <CookieNotifier />
 
                 {/* switches between different routes */}
                 <Switch>

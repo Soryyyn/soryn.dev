@@ -45,6 +45,7 @@
             margin-right: 1rem;
 
             &:hover, &:active {
+                cursor: pointer;
                 background-color: lighten(#9167F8, 10%);
                 transform: scale(1.05);
             }
@@ -62,6 +63,7 @@
             margin-right: 1.5rem;
 
             &:hover, &:active {
+                cursor: pointer;
                 background-color: var(--dark-bg-selected);
                 transform: scale(1.05);
                 border: solid 2px lighten(#9167F8, 10%);

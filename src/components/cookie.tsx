@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,19 +7,20 @@ import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
 import styles from "../styles/cookie.module.scss";
 
 export default function CookieNotifier(onChange: any) {
-
     const [status, setStatus] = useState<Boolean>()
+    const [shown, setShown] = useState<Boolean>(true)
 
+    // if the status of cookies changes create it and display the notification
     function handleChange(st: Boolean) {
         setStatus(st);
-
+        setShown(false);
         if (st) {
             document.cookie = "testCookie=exampleTextInCookie";
         }
     }
 
     return (
-        <div className={(document.cookie.indexOf('testCookie=') != 0) ? styles.cookieContainer : styles.hiddenCookieContainer}>
+        <div className={(document.cookie.indexOf('testCookie=') != 0 && shown) ? styles.cookieContainer : styles.hiddenCookieContainer}>
             <div className={styles.cookieIconContainer}>
                 <FontAwesomeIcon icon={faCookieBite} className={styles.cookieIcon} />
             </div>
@@ -30,5 +31,4 @@ export default function CookieNotifier(onChange: any) {
             </div>
         </div>
     );
-    // }
 }
