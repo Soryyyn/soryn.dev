@@ -1,11 +1,10 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Redirect
 } from "react-router-dom";
-import 'tippy.js/dist/tippy.css';
 
 // utils
 import { lazyPreloadRoute } from "./util/preload"
@@ -16,6 +15,7 @@ import styles from "./styles/app.module.scss";
 // components
 import Navigation from "./components/navigation";
 import Loading from "./components/loading";
+import CookieNotifier from "./components/cookie";
 
 // lazy load bg
 const Background = React.lazy(() => import("./components/background"));
@@ -31,6 +31,16 @@ const Custom404 = lazyPreloadRoute(pre404Site);
 const M152 = lazyPreloadRoute(preM152);
 
 export default function App() {
+
+    const [cookie, setCookie] = useState(false);
+
+    // create cookie
+    // if (document.cookie == undefined || cookie === false) {
+    //     document.cookie = "testCookie=created";
+    //     setCookie(true);
+    // }
+
+
     // rendered html elements
     return (
         /* react router manages routing and navigation */
@@ -41,6 +51,11 @@ export default function App() {
                 </div>
 
                 <Navigation />
+
+                {
+                    document.cookie == undefined || !cookie &&
+                    <CookieNotifier onChange={(value: any) => console.log(value)} />
+                }
 
                 {/* switches between different routes */}
                 <Switch>
