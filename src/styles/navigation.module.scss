@@ -17,7 +17,7 @@ nav ul {
         li {
             cursor: pointer;
 
-            background: var(--dark-bg);
+            background-color: var(--dark-bg);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             padding: 1rem 3rem;
@@ -36,7 +36,7 @@ nav ul {
             transition: 0.1s;
 
             &:hover {
-                background: var(--dark-bg-selected);
+                background-color: var(--dark-bg-selected);
                 transform: scale(1.05);
             }
         }
@@ -47,7 +47,7 @@ nav ul {
     li {
         text-decoration: underline;
         color: var(--light-primary) !important;
-        background: var(--dark-bg-selected);
+        -color: var(--dark-bg-selected);
     }
 }
 

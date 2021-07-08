@@ -16,6 +16,8 @@
 
     animation: moveInFromBottom 1s cubic-bezier(.43,.87,.36,1) forwards;
 
+    z-index: 100;
+
     .cookieIconContainer {
         display: flex;
         align-items: center;

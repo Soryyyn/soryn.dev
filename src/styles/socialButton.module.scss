@@ -1,5 +1,5 @@
 .socialButton {
-    background: var(--dark-bg);
+    background-color: var(--dark-bg);
 
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
         bottomToTop 1s cubic-bezier(.43,.87,.36,1) forwards;
 
     &:hover {
-        background: var(--dark-bg-selected);
+        background-color: var(--dark-bg-selected);
         transform: scale(1.05);
     }
 

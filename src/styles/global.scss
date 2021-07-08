@@ -3,7 +3,6 @@
 
 :root {
     --light-primary: rgba(255, 255, 255, 1);
-    --light-secondary: rgba(233, 231, 231, 1);
     --main-dark: rgba(39, 36, 48, 1);
     --main-dark-hovered: rgb(80, 74, 99);
     --dark-bg: rgba(39, 36, 48, 0.6);
@@ -50,13 +49,13 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--main-dark);
+    background-color: var(--main-dark);
     border-radius: var(--default-border-radius);
     transition: 0.1s;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--main-dark-hovered);
+    background-color: var(--main-dark-hovered);
     transition: 0.1s;
 }
