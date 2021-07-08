@@ -6,6 +6,7 @@ import styles from "../styles/m152.module.scss";
 // imgs
 import wireframeHome from "../../public/assets/wireframe_home.png";
 import wireframeAboutme from "../../public/assets/wireframe_aboutme.png";
+import wireframeM152 from "../../public/assets/wireframe_m152.png";
 
 export default function M152() {
 
@@ -83,6 +84,7 @@ export default function M152() {
                     The wireframes and mockups are made within Adobe XD.
                     <img src={wireframeHome} />
                     <img src={wireframeAboutme} />
+                    <img src={wireframeM152} />
                 </p>
 
             </section >
