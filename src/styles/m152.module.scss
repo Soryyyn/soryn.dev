@@ -119,6 +119,7 @@
 
             transition: 0.1s;
 
+            margin-top: 1rem;
             margin-right: 2rem;
 
             &:hover {
@@ -151,6 +152,7 @@
 
             transition: 0.1s;
 
+            margin-top: 1rem;
             margin-right: 2rem;
 
             &:hover, &:active {
@@ -185,6 +187,8 @@
 
             transition: 0.1s;
 
+            margin-top: 1rem;
+
             &:hover {
                 background-color: var(--dark-bg-selected);
                 transform: scale(1.05);
@@ -192,10 +196,72 @@
             }
         }
 
+        code {
+            background: var(--dark-bg);
+            padding: 1rem;
+            border-radius: var(--default-border-radius);
+
+        }
+
         img {
-            // opacity: 1 !important;
-            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
             margin-top: 2rem;
+        }
+    }
+}
+
+.hue-rotate-example {
+    animation: hueRotate infinite 1s linear;
+}
+
+@keyframes hueRotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .page-description, .m152-criteria {
+        width: 80%;
+    }
+
+    .page-description {
+        font-size: 1.2rem;
+    }
+
+    .m152-criteria {
+        .criteria-main-title {
+            font-size: 2rem;
+        }
+
+        .criteria-sub-title {
+            font-size: 1.8rem;
+        }
+
+        .criteria-text {
+            font-size: 1.2rem;
+
+            .link-button {
+                margin-top: 1rem;
+            }
+
+            .link-button, .light-button {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
         }
     }
 }
