@@ -1,0 +1,161 @@
+{
+  "id": "b40ad704-b860-4eb3-8aa5-e2584afe7893",
+  "version": "2.0",
+  "name": "soryn.dev",
+  "url": "https://m152.soryn.dev",
+  "tests": [{
+    "id": "e2027e94-d63a-4397-8695-78aaaa7cbc37",
+    "name": "whole_page_navigation",
+    "commands": [{
+      "id": "e8a05bca-e253-4ecd-884a-318d1676b718",
+      "comment": "",
+      "command": "open",
+      "target": "/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c7f20d6-2d6c-47d9-9850-3893f06275b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1917x1030",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55ae7d75-3055-42c1-885e-7e5d8570f40f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_accept_1mhl3_31",
+      "targets": [
+        ["css=.\\_accept_1mhl3_31", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'accept')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5be903c-bed3-4c00-bfac-d44b7e1a2481",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > li",
+      "targets": [
+        ["css=a:nth-child(1) > li", "css:finder"],
+        ["xpath=//div[@id='root']/nav/ul/a/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'about me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e23576e-33be-4748-906f-255178da367a",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > li",
+      "targets": [
+        ["css=a:nth-child(2) > li", "css:finder"],
+        ["xpath=//div[@id='root']/nav/ul/a[2]/li", "xpath:idRelative"],
+        ["xpath=//a[2]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d36763ac-a57c-429b-854b-b4818381061b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a:nth-child(2) > li",
+      "targets": [
+        ["css=a:nth-child(2) > li", "css:finder"],
+        ["xpath=//div[@id='root']/nav/ul/a[2]/li", "xpath:idRelative"],
+        ["xpath=//a[2]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2211aed-814a-475f-a17c-ccfe15f71f1d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.\\_activeNavLink_b5t9z_37 > li",
+      "targets": [
+        ["css=.\\_activeNavLink_b5t9z_37 > li", "css:finder"],
+        ["xpath=//div[@id='root']/nav/ul/a[2]/li", "xpath:idRelative"],
+        ["xpath=//a[2]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ba3649f-5446-4332-a890-d57fc30f8ef2",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > li",
+      "targets": [
+        ["css=a:nth-child(3) > li", "css:finder"],
+        ["xpath=//div[@id='root']/nav/ul/a[3]/li", "xpath:idRelative"],
+        ["xpath=//a[3]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'m152')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eb9f4ae-7865-4ab2-8783-08b836c8b770",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a:nth-child(3) > li",
+      "targets": [
+        ["css=a:nth-child(3) > li", "css:finder"],
+        ["xpath=//div[@id='root']/nav/ul/a[3]/li", "xpath:idRelative"],
+        ["xpath=//a[3]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'m152')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "788bb1ad-8be7-4cd8-bc38-965e4ee8bf5b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.\\_activeNavLink_b5t9z_37 > li",
+      "targets": [
+        ["css=.\\_activeNavLink_b5t9z_37 > li", "css:finder"],
+        ["xpath=//div[@id='root']/nav/ul/a[3]/li", "xpath:idRelative"],
+        ["xpath=//a[3]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'m152')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7b02937a-19b7-4187-ae8e-82e175d06b29",
+    "name": "social_button",
+    "commands": [{
+      "id": "0755cb3f-0036-44e1-aeeb-b277d43b503e",
+      "comment": "",
+      "command": "open",
+      "target": "/home",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3b107f9-8503-4f93-85fd-ee8be5a53193",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1917x1030",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdebbee8-2376-4be6-afce-ac8772bc51e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_socialButton_1jfdk_1:nth-child(1)",
+      "targets": [
+        ["css=.\\_socialButton_1jfdk_1:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/Soryyyn')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a482f80f-a081-4c16-ba5d-84b02efdc35a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e2027e94-d63a-4397-8695-78aaaa7cbc37"]
+  }],
+  "urls": ["https://m152.soryn.dev/"],
+  "plugins": []
+}
