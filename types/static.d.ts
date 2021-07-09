@@ -59,6 +59,10 @@ declare module '*.webp' {
     const ref: string;
     export default ref;
 }
+declare module '*.ico' {
+    const ref: string;
+    export default ref;
+}
 
 /* AUDIOS */
 declare module '*.mp3' {

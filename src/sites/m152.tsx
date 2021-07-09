@@ -9,6 +9,7 @@ import wireframeAboutme from "../../public/assets/wireframe_aboutme.png";
 import wireframeM152 from "../../public/assets/wireframe_m152.png";
 import googleSpeedDesktop from "../../public/assets/google_speed_insight_desktop.png";
 import googleSpeedMobile from "../../public/assets/google_speed_insight_mobile.png";
+import pageLogo from "../../public/favicon.ico";
 import testImgJPG from "../../public/assets/test_img.jpg";
 import testImgPNG from "../../public/assets/test_img.png";
 import testImgWEBP from "../../public/assets/test_img.webp";
@@ -75,7 +76,9 @@ export default function M152() {
                     <br />
                     <br />
 
-                    I used <a href="https://fontawesome.com/">Font Awesome</a> for icons. The logo is created by myself and represents one of the spinning cubes in the background.
+                    I used <a href="https://fontawesome.com/">Font Awesome</a> for icons. The logo/favicon is created by myself in <a href="https://www.blender.org">Blender</a> and represents one of the spinning cubes in the background.
+
+                    <img src={pageLogo} alt="page logo" style={{ width: "50%" }} />
                 </p>
 
                 <h1 className={styles["criteria-main-title"]}>Wireframe, Mockup & Sitemap</h1>
@@ -237,6 +240,14 @@ export default function M152() {
                 <h2 className={styles["criteria-sub-title"]}>Google speed insight for mobile</h2>
                 <p className={styles["criteria-text"]}>
                     <img src={googleSpeedMobile} alt="google speed insight on mobile devices" />
+                </p>
+            </section>
+
+            <section id="reflection" className={styles["m152-criteria"]}>
+                <h1 className={styles["criteria-main-title"]}>Reflection</h1>
+
+                <p className={styles["criteria-text"]}>
+
                 </p>
             </section>
 
